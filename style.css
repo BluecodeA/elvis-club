@@ -1,0 +1,281 @@
+  /* GENERIC STYLES */
+
+html,
+body,
+h1,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.75em;
+}
+
+.container {
+  width: 80vw;
+}
+
+em {
+  font-style: italic;
+}
+
+.match-height [class*="col-"] {
+  margin-bottom: -9999px;
+  padding-bottom: 9999px;
+}
+
+
+/* SECTION STYLES */
+
+header {
+  background: -webkit-linear-gradient(top left, #D32F2F, #d43535);
+  background: linear-gradient(to bottom right, #D32F2F, #d43535);
+  padding: 2.5vh;
+}
+
+header .header-section {
+  color: #FFF;
+  width: 20vw;
+  text-align: center;
+  margin: 1.5vh auto 0;
+  text-transform: uppercase;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+header .header-section img {
+  height: 5vh;
+  width: 5vh;
+  background-color: #FFF;
+  margin-top: -2.5vh;
+}
+
+header .header-section h1 {
+  color: #FFF;
+  font-family: "Bungee Inline", cursive;
+  margin-top: -1.5vh;
+}
+
+header .header-section p {
+  margin: 0;
+}
+
+header .header-section .club {
+  margin-left: 8.5px;
+  letter-spacing: 0.5em;
+}
+
+header .header-section .singapore {
+  font-size: 0.85em;
+}
+
+main {
+  background-color: #000;
+  background-image: url("https://res.cloudinary.com/dg6pstyla/image/upload/v1484823714/Elvis/IMG_0116.jpg");
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 75vh;
+}
+main nav {
+  background-color: #FFF;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+}
+main ul {
+  text-align: center;
+}
+main li {
+  color: #212121;
+  display: inline;
+  padding: 1vh 3vw;
+  cursor: pointer;
+}
+main .current-page, main li:hover {
+  background-color: #D32F2F;
+  color: #FFF;
+}
+main .main-section {
+  width: 25vw;
+  background-color: rgba(255, 255, 255, 0.995);
+  padding: 2.5vw;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+main .main-section h2 {
+  color: #212121;
+}
+main .main-section .button {
+  background-color: #212121;
+  color: #FFF;
+  display: inline-block;
+  margin: 2.5vh 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+main .main-section .button:hover {
+  background-color: #D32F2F;
+}
+
+.sticker {
+  background-color: #D32F2F;
+  color: #FFF;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.gallery-section {
+  border-left: 5px solid #D32F2F;
+}
+.gallery-section .sticker {
+  position: relative;
+  left: -10px;
+  top: 10px;
+}
+.gallery-section figure {
+  margin: 3vh 0;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.gallery-section figure:hover {
+  box-shadow: 0 15px 25px rgba(211, 47, 47, 0.2), 0 10px 10px rgba(211, 47, 47, 0.3);
+}
+.gallery-section .left-fig {
+  margin-top: 36vh;
+}
+.gallery-section img {
+  width: 100%;
+  height: 30vh;
+}
+.gallery-section .more-media {
+  background-color: #D32F2F;
+  color: #FFF;
+  height: 30vh;
+  font-size: 1.5em;
+  padding-top: 12.5vh;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.gallery-section .more-media:hover {
+  background-color: #FFF;
+  color: #D32F2F;
+  box-shadow: 0 15px 25px rgba(211, 47, 47, 0.2), 0 10px 10px rgba(211, 47, 47, 0.3);
+}
+
+.quote-section {
+  background-color: #D32F2F;
+  padding: 3.5vh 10vw 0;
+}
+.quote-section .quote-mark {
+  width: 7vh;
+  height: 7vh;
+  background-color: #FFF;
+  text-align: center;
+  margin: 0 auto -2.5vh;
+  padding-top: 2.5vh;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.quote-section .quote {
+  color: #FFF;
+  padding: 2.5vh 5vw;
+}
+.quote-section .quote p {
+  text-align: center;
+  padding: 2.5vh 0 1.5vh;
+}
+
+.events-section-wrapper .events-section {
+  /*background-image: url('http://res.cloudinary.com/dg6pstyla/image/upload/v1484991660/IMG_0110_p7uyzm.jpg');
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;*/
+  padding: 2.5vh 0;
+  border-right: 5px solid #D32F2F;
+}
+.events-section-wrapper .events-section .sticker {
+  position: relative;
+  left: 10px;
+}
+.events-section-wrapper .events-section .events-list {
+  width: 50vw;
+  background-color: rgba(211, 47, 47, 0.8);
+  padding: 2.5vh;
+}
+.events-section-wrapper .events-section .events-list .button {
+  background-color: #D32F2F;
+  color: #FFF;
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.events-section-wrapper .events-section .events-list .button:hover {
+  background-color: #FFF;
+  color: #D32F2F;
+}
+.events-section-wrapper .events-section .events-list article {
+  margin: 2.5vh 0;
+  border: 0.5px solid #D32F2F;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.events-section-wrapper .events-section .events-list .row {
+  overflow: hidden;
+}
+.events-section-wrapper .events-section .events-list .date {
+  background-color: #D32F2F;
+  color: #FFF;
+  font-size: 1.65em;
+  text-align: center;
+}
+.events-section-wrapper .events-section .events-list .event {
+  background-color: #FFF;
+  color: #212121;
+}
+.events-section-wrapper .events-section .events-list .event h4{
+  color: #212121;
+}
+
+footer {
+  background-color: #000;
+  color: #FFF;
+  padding: 3.5vh;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+footer .title {
+  background-color: #000;
+  margin-top: -1.25vh;
+  padding: 0 0.5vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+footer .contact {
+  border-top: 0.5px solid #FFF;
+}
+footer .contact p {
+  padding-bottom: 1.5vh;
+  text-align: center;
+}
+footer .connect {
+  border-top: 0.5px solid #FFF;
+  text-align: center;
+}
+footer .connect p {
+  text-transform: uppercase;
+}
+footer .connect ul {
+  padding: 2.5vh 0;
+}
+footer .connect li {
+  display: inline;
+  padding: 0 2.5vw;
+  cursor: pointer;
+}
+footer .connect li:hover {
+  color: #D32F2F;
+}
