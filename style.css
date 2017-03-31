@@ -9,20 +9,16 @@ p {
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.75em;
 }
-
 .container {
   width: 80vw;
 }
-
 em {
   font-style: italic;
 }
-
 .match-height [class*="col-"] {
   margin-bottom: -9999px;
   padding-bottom: 9999px;
@@ -36,42 +32,34 @@ header {
   background: linear-gradient(to bottom right, #D32F2F, #d43535);
   padding: 2.5vh;
 }
-
 header .header-section {
   color: #FFF;
-  width: 20vw;
+  width: 200px;
   text-align: center;
   margin: 1.5vh auto 0;
   text-transform: uppercase;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
-
 header .header-section img {
   height: 5vh;
   width: 5vh;
   background-color: #FFF;
   margin-top: -2.5vh;
 }
-
 header .header-section h1 {
   color: #FFF;
   font-family: "Bungee Inline", cursive;
   margin-top: -1.5vh;
 }
-
 header .header-section p {
   margin: 0;
 }
-
 header .header-section .club {
-  margin-left: 8.5px;
-  letter-spacing: 0.5em;
+  margin: 0 auto;
 }
-
 header .header-section .singapore {
   font-size: 0.85em;
 }
-
 main {
   background-color: #000;
   background-image: url("https://res.cloudinary.com/dg6pstyla/image/upload/v1484823714/Elvis/IMG_0116.jpg");
@@ -79,6 +67,7 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
   height: 75vh;
+  overflow-y: hidden;
 }
 main nav {
   background-color: #FFF;
@@ -100,7 +89,7 @@ main .current-page, main li:hover {
   color: #FFF;
 }
 main .main-section {
-  width: 25vw;
+  width: 250px;
   background-color: rgba(255, 255, 255, 0.995);
   padding: 2.5vw;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -156,6 +145,7 @@ main .main-section .button:hover {
   color: #FFF;
   height: 30vh;
   font-size: 1.5em;
+  margin-bottom: 2.5vh;
   padding-top: 12.5vh;
   text-align: center;
   cursor: pointer;
@@ -189,7 +179,6 @@ main .main-section .button:hover {
   text-align: center;
   padding: 2.5vh 0 1.5vh;
 }
-
 .events-section-wrapper .events-section {
   /*background-image: url('http://res.cloudinary.com/dg6pstyla/image/upload/v1484991660/IMG_0110_p7uyzm.jpg');
   background-position: bottom right;
@@ -205,7 +194,7 @@ main .main-section .button:hover {
 .events-section-wrapper .events-section .events-list {
   width: 50vw;
   background-color: rgba(211, 47, 47, 0.8);
-  padding: 2.5vh;
+  padding: 12.5px;
 }
 .events-section-wrapper .events-section .events-list .button {
   background-color: #D32F2F;
@@ -278,4 +267,93 @@ footer .connect li {
 }
 footer .connect li:hover {
   color: #D32F2F;
+}
+
+/* MOBILE DEVICE STYLES */
+@media only screen and (max-width: 440px) {
+    .hide-sm {
+        display: none;
+    }
+    .container {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    main .main-section {     
+      max-height: 100%;
+      background: radial-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.5), rgba(0,0,0,0.15), rgba(0,0,0,0.1), rgba(0,0,0,0));
+      margin: 3.5vh auto 0;
+      border-radius: 1.5px;
+    }
+    main .main-section h2 {
+      color: #FFF;
+    }
+    main .main-section p {
+      color: #DDD;
+    }
+    .events-section-wrapper .events-section .events-list {
+      width: 100%;
+      margin-top: 50px;
+      padding: 0;
+    }
+}
+
+@media only screen and (min-width: 441px) and (max-width: 768px) {
+    .hide-sm {
+        display: none;
+    }
+    header {
+        background: aqua;
+    }
+    main .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    main .main-section {     
+      max-height: 100%;
+      background: radial-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.5), rgba(0,0,0,0.15), rgba(0,0,0,0.1), rgba(0,0,0,0));
+      margin: 3.5vh auto 0;
+      border-radius: 1.5px;
+    }
+    main .main-section h2 {
+      color: #FFF;
+    }
+    main .main-section p {
+      color: #DDD;
+    }
+    .events-section-wrapper .events-section .events-list {
+      width: 100%;
+      margin-top: 50px;
+      padding: 0;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    header {
+        background: indigo;
+    }
+    main .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    main .main-section {     
+      max-height: 100%;
+      background: radial-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.5), rgba(0,0,0,0.15), rgba(0,0,0,0.1), rgba(0,0,0,0));
+      margin: 3.5vh auto 0;
+      border-radius: 1.5px;
+    }
+    main .main-section h2 {
+      color: #FFF;
+    }
+    main .main-section p {
+      color: #DDD;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    main .main-section {
+      width: 300px;
+    }
 }
