@@ -302,9 +302,9 @@ footer .connect li:hover {
     .hide-sm {
         display: none;
     }
-    header {
+    /* header {
         background: aqua;
-    }
+    }*/
     main .container {
         width: 100%;
         margin: 0;
@@ -330,9 +330,9 @@ footer .connect li:hover {
 }
 
 @media only screen and (min-width: 767px) and (max-width: 992px) {
-    header {
+    /* header {
         background: indigo;
-    }
+    }*/
     main .container {
         width: 100%;
         margin: 0;
